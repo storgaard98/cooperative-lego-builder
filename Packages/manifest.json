@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "68.0.2",
-    "com.meta.xr.sdk.core": "68.0.3",
+    "com.meta.xr.sdk.avatars": "24.1.1",
     "com.meta.xr.sdk.interaction": "68.0.2",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.ide.rider": "3.0.31",
@@ -9,7 +9,12 @@
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.mobile.android-logcat": "1.4.3",
     "com.unity.multiplayer.center": "1.0.0",
+    "com.unity.multiplayer.tools": "2.2.1",
+    "com.unity.netcode.gameobjects": "2.0.0",
     "com.unity.render-pipelines.universal": "17.0.3",
+    "com.unity.services.lobby": "1.2.2",
+    "com.unity.services.multiplay": "1.2.5",
+    "com.unity.services.relay": "1.1.1",
     "com.unity.test-framework": "1.4.5",
     "com.unity.timeline": "1.8.7",
     "com.unity.ugui": "2.0.0",
