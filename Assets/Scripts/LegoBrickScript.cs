@@ -24,20 +24,26 @@ public class LegoBrickScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == snapLayer.value && other.gameObject != transform.parent.gameObject)
+        if (1<<other.gameObject.layer == snapLayer.value)
         {
             Debug.Log("you should snap now!");
             float distance = Vector3.Distance(transform.position, other.transform.position);
-            if (distance <= snapDistance)
+            if (distance >= snapDistance)
             {
-                Debug.Log("snapping");
-                Vector3 direction = other.transform.position - transform.position;
-                rb.AddForce(direction.normalized * snapForce * Time.deltaTime);
+                Debug.Log("Within Distance");
+                if (Input.GetMouseButtonUp(0))
+                {
+                    Debug.Log("snapping");
+
+                    Vector3 direction = other.transform.position - transform.position;
+                    rb.AddForce(direction.normalized * snapForce * Time.deltaTime);
+                }
+                
             }
         }
     }
