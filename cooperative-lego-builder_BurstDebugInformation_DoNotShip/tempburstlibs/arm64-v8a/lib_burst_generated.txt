@@ -9,6 +9,7 @@ Library: D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburst
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\Burst
+--debug=Full
 --key-folder=F:/Unity/6000.0.21f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Library\Burst
 --output=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -44,6 +45,7 @@ Library: D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburst
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\Burst
+--debug=Full
 --key-folder=F:/Unity/6000.0.21f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Library\Burst
 --output=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -61,6 +63,7 @@ Library: D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburst
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\Burst
+--debug=Full
 --key-folder=F:/Unity/6000.0.21f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Library\Burst
 --output=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
@@ -176,6 +179,7 @@ Library: D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburst
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\Burst
+--debug=Full
 --key-folder=F:/Unity/6000.0.21f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=D:\_Projects\LegoAR\cooperative-lego-builder\Library\Burst
 --output=D:\_Projects\LegoAR\cooperative-lego-builder\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated

@@ -23,5 +23,6 @@ public class FollowLeftHand : MonoBehaviour
             (handToFollow.transform.position.z + offSetZ));
         
         transform.LookAt(targetCamera.transform, Vector3.up);
+        transform.Rotate(0, 180, 0);
     }
 }
