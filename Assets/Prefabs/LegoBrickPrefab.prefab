@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6340691493462416328}
   - component: {fileID: 2832049091907088772}
   - component: {fileID: 6072559609032952580}
+  - component: {fileID: 4784639719872388344}
   m_Layer: 0
   m_Name: LegoBrickPrefab
   m_TagString: Untagged
@@ -127,7 +128,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9ae1e9be8e34de794232b3c09ca580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element2: {fileID: 0}
+  spawnInfosList: []
+--- !u!114 &4784639719872388344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236847447528609233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8aee8121e1fa49ed915d6b655c8553d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6335980998248013831
 GameObject:
   m_ObjectHideFlags: 0
