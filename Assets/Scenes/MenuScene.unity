@@ -7128,6 +7128,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1064652669110613399, guid: 51ed7cc3a8da94885b8ba229514ec286,
+        type: 3}
+      propertyPath: _enterHoverNormal
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1780705786654334957, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7266,7 +7271,7 @@ PrefabInstance:
     - target: {fileID: 3747719183627559407, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3882797933569105040, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
@@ -7386,6 +7391,11 @@ PrefabInstance:
     - target: {fileID: 8914350299456781629, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186642773382246050, guid: 51ed7cc3a8da94885b8ba229514ec286,
+        type: 3}
+      propertyPath: _doubleSided
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
