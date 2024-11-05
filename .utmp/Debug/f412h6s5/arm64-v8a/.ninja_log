@@ -1,0 +1,10 @@
+# ninja log v5
+2	668	1729848612597642885	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	f1fdb4ae8c729df3
+1	698	1729848612616584564	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	d639c65112e22099
+1	701	1729848612633375388	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	de92486f8af0c06f
+3	702	1729848612633594057	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	32729e477c5fce9b
+3	705	1729848612634050186	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d7371c016437237a
+1	726	1729848612660804604	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	11089dba92987dfc
+2	790	1729848612723875364	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a19b6b3b926e6f4e
+0	813	1729848612746843372	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	41d0c559ba8a0c8e
+813	936	1729848612863575011	/Users/storgaard/Desktop/cooperative-lego-builder/Library/PramData/AndroidApplicationController/Cache/com.UnityTechnologies.com.unity.template.urpblank/gradle-project/unityLibrary/build/intermediates/cxx/Debug/f412h6s5/obj/arm64-v8a/libgame.so	d667a5bbbf89d202
