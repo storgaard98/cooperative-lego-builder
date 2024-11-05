@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MultiplayerTestWithTemplate.unity
     guid: 44b07b2b97fe2564cae8a9a3ab9008bb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MultiplayerWithOwnAvatars.unity
     guid: 5158d20fdb946664db669527ff2fd573
   - enabled: 1
