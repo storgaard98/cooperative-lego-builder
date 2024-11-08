@@ -15264,6 +15264,7 @@ MonoBehaviour:
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 7f4adb487acc84747a18211e6e834946, type: 2}
+      - {fileID: 11400000, guid: 37705acf659d92b4788b0ee3e5ca3ec9, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -21721,6 +21722,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5996609027365804502, guid: 72794afa871b54b0fa9e0966a8553a2c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7119823718463472601, guid: 72794afa871b54b0fa9e0966a8553a2c,
         type: 3}
       propertyPath: m_Name
@@ -21729,7 +21735,7 @@ PrefabInstance:
     - target: {fileID: 7119823718463472601, guid: 72794afa871b54b0fa9e0966a8553a2c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
