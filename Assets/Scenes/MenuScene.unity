@@ -3130,6 +3130,7 @@ GameObject:
   - component: {fileID: 439387926}
   - component: {fileID: 439387925}
   - component: {fileID: 439387924}
+  - component: {fileID: 439387927}
   m_Layer: 0
   m_Name: '[BuildingBlock] Spawn 1x2'
   m_TagString: Untagged
@@ -3318,6 +3319,55 @@ Transform:
   - {fileID: 635885977}
   m_Father: {fileID: 900995844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439387927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439387923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 439387924}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1257670785}
+        m_TargetAssemblyTypeName: SpawnElementScript, Assembly-CSharp
+        m_MethodName: Spawn1x2Brick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &442875443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7271,7 +7321,7 @@ PrefabInstance:
     - target: {fileID: 3747719183627559407, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3882797933569105040, guid: 51ed7cc3a8da94885b8ba229514ec286,
         type: 3}
@@ -12065,9 +12115,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnInfosList:
-  - prefab: {fileID: 3236847447528609233, guid: 67d45a95658a6604383c59ecc942cf5c,
+  - prefab: {fileID: 8872741354227002005, guid: b5375e37edb70d24499a28f0daf0b5ce,
       type: 3}
     spawnPosition: {x: 0, y: 0.5, z: 0.5}
+    brickId: 1x2Brick
+  - prefab: {fileID: 8872741354227002005, guid: 8479c02872d2ce844957888730d4e52c,
+      type: 3}
+    spawnPosition: {x: 0.1, y: 0.5, z: 0.5}
+    brickId: 1x4Brick
+  - prefab: {fileID: 8872741354227002005, guid: 13bd6bb787e5b412f8ee561d05c41fec,
+      type: 3}
+    spawnPosition: {x: 0.2, y: 0.5, z: 0.5}
+    brickId: 2x4Brick
+  - prefab: {fileID: 8872741354227002005, guid: 19f5dea3680e23e4ea6d9f8dbb8cb7b3,
+      type: 3}
+    spawnPosition: {x: 0.3, y: 0.5, z: 0.5}
     brickId: 2x2Brick
 --- !u!4 &1257670786
 Transform:
@@ -15497,7 +15559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 486401866}
+  _interactableView: {fileID: 1654191206}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -15506,7 +15568,19 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1257670785}
+        m_TargetAssemblyTypeName: SpawnElementScript, Assembly-CSharp
+        m_MethodName: Spawn2x4Brick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -16918,6 +16992,7 @@ GameObject:
   - component: {fileID: 1868952922}
   - component: {fileID: 1868952921}
   - component: {fileID: 1868952920}
+  - component: {fileID: 1868952923}
   m_Layer: 0
   m_Name: '[BuildingBlock] Spawn 1x4'
   m_TagString: Untagged
@@ -17106,6 +17181,55 @@ Transform:
   - {fileID: 1747402957}
   m_Father: {fileID: 900995844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1868952923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868952919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1868952920}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1257670785}
+        m_TargetAssemblyTypeName: SpawnElementScript, Assembly-CSharp
+        m_MethodName: spawn1x4Brick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1872546180
 GameObject:
   m_ObjectHideFlags: 0

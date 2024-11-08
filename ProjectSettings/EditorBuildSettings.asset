@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MultiplayerWithOwnAvatars.unity
     guid: 5158d20fdb946664db669527ff2fd573
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MultiplayerWithOwnAvatarsAndTable.unity
     guid: a5adbe4dd5cffeb41b9984360bdcb9ae
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MenuScene.unity
     guid: a2c972907b6e549db9dad1573bf1461e
   m_configObjects:

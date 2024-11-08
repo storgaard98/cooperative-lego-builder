@@ -22,8 +22,24 @@ public class SpawnElementScript : MonoBehaviour
             spawnInfos.Add(spawnInfo.brickId, spawnInfo);
         }
     }
+    
+    public void Spawn1x2Brick()
+    {
+        if (spawnInfos.ContainsKey("1x2Brick"))
+        {
+            Instantiate(spawnInfos["1x2Brick"].prefab, spawnInfos["1x2Brick"].spawnPosition, Quaternion.identity);
+        }
+    }
+    
+    public void spawn1x4Brick()
+    {
+        if (spawnInfos.ContainsKey("1x4Brick"))
+        {
+            Instantiate(spawnInfos["1x4Brick"].prefab, spawnInfos["1x4Brick"].spawnPosition, Quaternion.identity);
+        }
+    }
 
-    void Spawn2x2Brick()
+    public void Spawn2x2Brick()
     {
         if (spawnInfos.ContainsKey("2x2Brick"))
         {
@@ -31,7 +47,7 @@ public class SpawnElementScript : MonoBehaviour
         }
     }
 
-    void Spawn2x4Brick()
+    public void Spawn2x4Brick()
     {
         if (spawnInfos.ContainsKey("2x4Brick"))
         {
