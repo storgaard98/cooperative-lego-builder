@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391794628261583096}
+  - component: {fileID: 5297933049847540301}
   - component: {fileID: 8137396367024962447}
   - component: {fileID: 3998989732149344822}
   - component: {fileID: 6050225113870737821}
@@ -34,6 +35,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5297933049847540301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505291346381220035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 631939309
+  InScenePlacedSourceGlobalObjectIdHash: 1545146741
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!114 &8137396367024962447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,6 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9ae1e9be8e34de794232b3c09ca580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   spawnInfosList:
   - prefab: {fileID: 8872741354227002005, guid: b5375e37edb70d24499a28f0daf0b5ce,
       type: 3}
@@ -53,15 +80,15 @@ MonoBehaviour:
     brickId: 1x2Brick
   - prefab: {fileID: 8872741354227002005, guid: 8479c02872d2ce844957888730d4e52c,
       type: 3}
-    spawnPosition: {x: 0.1, y: 0.5, z: 0.5}
+    spawnPosition: {x: -0.1, y: 0.5, z: 0.5}
     brickId: 1x4Brick
   - prefab: {fileID: 8872741354227002005, guid: 13bd6bb787e5b412f8ee561d05c41fec,
       type: 3}
-    spawnPosition: {x: 0.2, y: 0.5, z: 0.5}
+    spawnPosition: {x: -0.25, y: 0.5, z: 0.5}
     brickId: 2x4Brick
   - prefab: {fileID: 8872741354227002005, guid: 19f5dea3680e23e4ea6d9f8dbb8cb7b3,
       type: 3}
-    spawnPosition: {x: 0.3, y: 0.5, z: 0.5}
+    spawnPosition: {x: -0.4, y: 0.5, z: 0.5}
     brickId: 2x2Brick
 --- !u!114 &3998989732149344822
 MonoBehaviour:
@@ -90,4 +117,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightPointingFinger: {fileID: 0}
-  activeColor: {r: 1, g: 0, b: 0, a: 1}
