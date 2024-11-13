@@ -6,7 +6,7 @@ public class ChangeColorScript : MonoBehaviour
     [SerializeField] private Transform rightPointingFinger;
     
     
-    public Color activeColor = Color.red;  // Default color
+    private Color activeColor = Color.red;  // Default color
     
     public void SetBlueColor()
     {
@@ -35,19 +35,22 @@ public class ChangeColorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Cast a ray from the right pointing finger's position forward
+        // Set up a ray from the rightPointingFinger's position and direction
         Ray ray = new Ray(rightPointingFinger.position, rightPointingFinger.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        RaycastHit hit;
+        // Perform the raycast and check if it hits something
+        if (Physics.Raycast(ray, out hit))
         {
-            // Check if the object hit has a Brick component
-            GameObject brick = hit.collider.GetComponent<GameObject>();
-            if (brick != null)
-            {   
-                Debug.LogWarning("Brick hit");
-                // Change the brick's color to the active color
-                brick.GetComponent<Renderer>().material.color = activeColor;
+            if (hit.collider.name.Contains("Brick"))
+            {
+                Debug.Log("Hit object contains 'BRICK' in its name: " + hit.collider.name);
+                Renderer renderer = hit.collider.GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    Debug.Log("Renderer found on the hit object. Changing color to activeColor." + activeColor);
+                    renderer.material.color = activeColor;
+                }
             }
         }
-
     }
 }
