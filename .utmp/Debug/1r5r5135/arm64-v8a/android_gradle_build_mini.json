@@ -1,7 +1,7 @@
 {
   "buildFiles": [
-    "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\PramData\\AndroidApplicationController\\Cache\\com.UnityTechnologies.com.unity.template.urpblank\\gradle-project\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
-    "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\PramData\\AndroidApplicationController\\Cache\\com.UnityTechnologies.com.unity.template.urpblank\\gradle-project\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
+    "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
@@ -21,7 +21,7 @@
     "game::@d02bb112ea9f9c2ed29f": {
       "artifactName": "game",
       "abi": "arm64-v8a",
-      "output": "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\PramData\\AndroidApplicationController\\Cache\\com.UnityTechnologies.com.unity.template.urpblank\\gradle-project\\unityLibrary\\build\\intermediates\\cxx\\Debug\\1r5r5135\\obj\\arm64-v8a\\libgame.so",
+      "output": "D:\\_Projects\\LegoAR\\cooperative-lego-builder\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\Debug\\1r5r5135\\obj\\arm64-v8a\\libgame.so",
       "runtimeFiles": []
     }
   }
