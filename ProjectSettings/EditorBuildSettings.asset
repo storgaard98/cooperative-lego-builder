@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MultiplayerWithOwnAvatarsAndTable.unity
     guid: a5adbe4dd5cffeb41b9984360bdcb9ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuScene.unity
     guid: a2c972907b6e549db9dad1573bf1461e
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerWithOwnAvatarsAndTableFromOldVersion.unity
+    guid: 2aa011fb2d7967b4b855da75c1bf1b47
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 426bab2a291cd4e238ba3e65d0fed8be,
       type: 2}

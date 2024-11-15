@@ -1,8 +1,9 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.Netcode;
 
-public class SpawnElementScript : MonoBehaviour
+public class SpawnElementScript : NetworkBehaviour
 {
     [System.Serializable]
     public class SpawnInfo
@@ -22,12 +23,15 @@ public class SpawnElementScript : MonoBehaviour
             spawnInfos.Add(spawnInfo.brickId, spawnInfo);
         }
     }
-    
+
     public void Spawn1x2Brick()
     {
         if (spawnInfos.ContainsKey("1x2Brick"))
         {
-            Instantiate(spawnInfos["1x2Brick"].prefab, spawnInfos["1x2Brick"].spawnPosition, Quaternion.identity);
+            GameObject brick = Instantiate(spawnInfos["1x2Brick"].prefab, spawnInfos["1x2Brick"].spawnPosition, Quaternion.identity);
+            brick.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            var instanceNetworkObject = brick.GetComponent<NetworkObject>();
+            instanceNetworkObject.Spawn();
         }
     }
     
@@ -35,7 +39,10 @@ public class SpawnElementScript : MonoBehaviour
     {
         if (spawnInfos.ContainsKey("1x4Brick"))
         {
-            Instantiate(spawnInfos["1x4Brick"].prefab, spawnInfos["1x4Brick"].spawnPosition, Quaternion.identity);
+            GameObject brick = Instantiate(spawnInfos["1x4Brick"].prefab, spawnInfos["1x4Brick"].spawnPosition, Quaternion.identity);
+            brick.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            var instanceNetworkObject = brick.GetComponent<NetworkObject>();
+            instanceNetworkObject.Spawn();
         }
     }
 
@@ -43,7 +50,10 @@ public class SpawnElementScript : MonoBehaviour
     {
         if (spawnInfos.ContainsKey("2x2Brick"))
         {
-            Instantiate(spawnInfos["2x2Brick"].prefab, spawnInfos["2x2Brick"].spawnPosition, Quaternion.identity);
+            GameObject brick = Instantiate(spawnInfos["2x2Brick"].prefab, spawnInfos["2x2Brick"].spawnPosition, Quaternion.identity);
+            brick.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            var instanceNetworkObject = brick.GetComponent<NetworkObject>();
+            instanceNetworkObject.Spawn();
         }
     }
 
@@ -51,7 +61,10 @@ public class SpawnElementScript : MonoBehaviour
     {
         if (spawnInfos.ContainsKey("2x4Brick"))
         {
-            Instantiate(spawnInfos["2x4Brick"].prefab, spawnInfos["2x4Brick"].spawnPosition, Quaternion.identity);
+            GameObject brick = Instantiate(spawnInfos["2x4Brick"].prefab, spawnInfos["2x4Brick"].spawnPosition, Quaternion.identity);
+            brick.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            var instanceNetworkObject = brick.GetComponent<NetworkObject>();
+            instanceNetworkObject.Spawn();
         }
     }
 }
