@@ -1,2 +1,2 @@
-D:\_Projects\LegoAR\cooperative-lego-builder\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
-D:\_Projects\LegoAR\cooperative-lego-builder\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
+D:\_Projects\LegoAR\cooperative-lego-builder\Library\PramData\AndroidApplicationController\Cache\com.UnityTechnologies.com.unity.template.urpblank\gradle-project\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\_Projects\LegoAR\cooperative-lego-builder\Library\PramData\AndroidApplicationController\Cache\com.UnityTechnologies.com.unity.template.urpblank\gradle-project\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

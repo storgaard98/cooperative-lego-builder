@@ -66,7 +66,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "game::@d02bb112ea9f9c2ed29f",
-					"jsonFile" : "target-game-Debug-6c44898590c61c73fd08.json",
+					"jsonFile" : "target-game-Debug-5179128439286dcde0f0.json",
 					"name" : "game",
 					"projectIndex" : 1
 				}
@@ -77,7 +77,7 @@
 	"paths" : 
 	{
 		"build" : "D:/_Projects/LegoAR/cooperative-lego-builder/.utmp/Debug/1r5r5135/arm64-v8a",
-		"source" : "D:/_Projects/LegoAR/cooperative-lego-builder/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp"
+		"source" : "D:/_Projects/LegoAR/cooperative-lego-builder/Library/PramData/AndroidApplicationController/Cache/com.UnityTechnologies.com.unity.template.urpblank/gradle-project/unityLibrary/src/main/cpp"
 	},
 	"version" : 
 	{

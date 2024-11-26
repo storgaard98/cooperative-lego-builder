@@ -1,4 +1,5 @@
 using System;
+using Oculus.Interaction;
 using UnityEngine;
 
 public class LegoSnap : MonoBehaviour
@@ -10,6 +11,42 @@ public class LegoSnap : MonoBehaviour
     
     private Transform closestBrick = null;
 
+    private Grabbable _grabbable;
+    private bool wasGrabbed = false;
+    
+    private void Awake()
+    {
+        // Locate the Grabbable component on the child
+        _grabbable = GetComponentInChildren<Grabbable>();
+        
+        if (_grabbable == null)
+        {
+            Debug.LogError("Grabbable component not found on child of " + gameObject.name);
+        }
+
+        _grabbable.WhenPointerEventRaised += OnPointerEvent;
+    }
+
+    
+    private void OnDestroy()
+    {
+        if (_grabbable != null)
+        {
+            _grabbable.WhenPointerEventRaised -= OnPointerEvent;
+        }
+    }
+
+    private void OnPointerEvent(PointerEvent evt)
+    {
+        // Check for release event
+        if (evt.Type == PointerEventType.Unselect)
+        {
+            Debug.LogError($"{_grabbable.gameObject.name} was released!");
+            TrySnapToNearestBrick();
+        }
+    }
+
+
     // Update is called once per frame
     private void OnMouseUp()
     {
@@ -20,8 +57,8 @@ public class LegoSnap : MonoBehaviour
     {
         // Initializing closestBrick and setting an arbitrary large value for the minimum distance
         closestBrick = null;
-        float minDistance = Mathf.Infinity;  // We start with an infinitely large distance
-
+        //float minDistance = Mathf.Infinity;  // We start with an infinitely large distance
+        float minDistance = snapThreshold;
         // Find the closest brick only
         LegoSnap[] allBricks = FindObjectsOfType<LegoSnap>();
 
@@ -61,7 +98,6 @@ public class LegoSnap : MonoBehaviour
 
         if (existingGroup == null)
         {
-            Debug.Log("Du kom her ind.");
             // Neither brick is part of a group, so create a new LegoGroup
             GameObject combinedGroup = new GameObject("LegoGroup");
             combinedGroup.transform.position = closestBrick.position;
@@ -78,8 +114,6 @@ public class LegoSnap : MonoBehaviour
     void AddToParentGroup(Transform parentGroup)
     {
         // Set the parent group for both bricks
-        Debug.Log("the CloestBrick: " + closestBrick.transform.name + " This Brick: " + transform.name);
-        Debug.Log("paretnGroup: " + parentGroup.name);
         closestBrick.SetParent(parentGroup);
         transform.SetParent(parentGroup);
     }
